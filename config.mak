@@ -35,8 +35,8 @@ TARGET = mips64el-linux-musl
 # headers, which are not needed unless compiling programs that use them.
 
 # BINUTILS_VER = 2.25.1
-GCC_VER = gcc-7.3.0
-MUSL_VER = 1.2.1
+GCC_VER = 7.3.0
+MUSL_VER = 1.2.2
 # GMP_VER =
 # MPC_VER =
 # MPFR_VER =
