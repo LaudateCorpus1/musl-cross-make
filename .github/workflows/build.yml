@@ -1,0 +1,17 @@
+name: Build CI
+
+on:
+  
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run docker-compose up
+      run: docker-compose up
+    - uses: actions/upload-artifact@v2
+      with:
+        name: mips64el-musl
+        path: output/*
