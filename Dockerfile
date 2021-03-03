@@ -6,4 +6,4 @@ RUN yum -y -q install \
         flex libusb gnu-free-* gnu-efi* pesign shim \
         zip nasm acpica-tools glibc-static zlib-static
 
-CMD cd /musl/ && make && make install
+CMD cd /musl/ && ls -l && make && make install
