@@ -45,7 +45,7 @@ LINUX_VER = 4.19.90
 
 # By default source archives are downloaded with wget. curl is also an option.
 
-# DL_CMD = wget -c -O
+DL_CMD = wget -q -c -O
 # DL_CMD = curl -C - -L -o
 
 # Check sha-1 hashes of downloaded source archives. On gnu systems this is
