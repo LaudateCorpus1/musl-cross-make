@@ -6,4 +6,4 @@ RUN yum -y -q install \
         flex libusb gnu-free-* gnu-efi* pesign shim \
         zip nasm acpica-tools glibc-static zlib-static
 
-CMD cd /musl/ && ls -l && make >build.log 2>&1 && make install
+CMD cd /musl/ && ls -l && make >build.log 2>&1 && make install && tar -cjf output.tar.bz2 ./output
