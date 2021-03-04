@@ -10,8 +10,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run docker-compose up
-      run: docker-compose up    
-      uses: marvinpinto/action-automatic-releases@latest
+      run: docker-compose up
+    - uses: marvinpinto/action-automatic-releases@latest
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
